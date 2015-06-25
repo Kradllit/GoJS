@@ -1,20 +1,20 @@
 var tasksCompleted = {
     'Anna': 29,
-    'Serg': 350,
+    'Serg': 35,
     'Elena': 1,
     'Anton': 99
 };
 
 var maxTasks = function (task) {
     var max = 0;
-    var i = 0;
-    for (i in task) {
+    var best = 0;
+    for (var i in task) {
         if (max < task[i]) {
             max = task[i];
-            console.log(i);
+            best = i;
         }
     }
-    console.log(i);
+    console.log(best);
 }
 
 maxTasks(tasksCompleted);
