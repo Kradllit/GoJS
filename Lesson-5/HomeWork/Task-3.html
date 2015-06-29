@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var array = [];
+        var total = 0;
+        do {
+            number = parseInt(prompt('Please enter a number'));
+            if (!isNaN(number)) array.push(number);
+        }
+        while (!isNaN(number));
+        for (var i in array) {
+            total += array[i];
+        }
+        alert(total);
+    </script>
+</body>
+</html>
+
